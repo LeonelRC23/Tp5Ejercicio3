@@ -25,7 +25,7 @@ function inyectar(){
     for (let i = 0; i < listaTareas.length; i++) {
       tablaTareas.innerHTML += `
               <tr>
-                  <th scope="row" class="text-center">${i + 1}</th>
+                  <th class="text-center">${listaTareas[i].id}</th>
                   <td class="text-center">${listaTareas[i].nombreTarea}</td>
                   <td class="text-center">${listaTareas[i].nombrePersona}</td>
                   <td class="text-center"><button class="btn btn-danger" onclick="eliminarTarea(${listaTareas[i].id})"

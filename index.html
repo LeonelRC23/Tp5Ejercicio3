@@ -15,15 +15,13 @@
   <body>
     <main class="container">
       <h1 class="my-3">Creacion de una tarea</h1>
-      <!-- Creacion de una tarea -->
       <div id="ingresarTareaDiv">
           <label for="tarea" class="mt-2">Ingrese el nombre de la tarea</label>
-          <input type="text" name="tarea" maxlength="50" />
+          <input type="text" name="tarea" maxlength="50" id="inputTarea"/>
           <label for="persona" class="mt-2">Ingrese el nombre de la persona asignada</label>
-          <input type="text" name="persona" />
-          <button class="btn btn-primary my-3 w-auto">Agregar tarea</button>
+          <input type="text" name="persona" maxlength="50" id="inputNombre"/>
+          <button id="btnAgregarTarea" class="btn btn-primary my-3 w-auto">Agregar tarea</button>
       </div>
-      <!-- Tabla de tareas -->
       <table id="tabla" class="table table-striped m-3">
         <thead>
           <tr>
@@ -33,13 +31,7 @@
             <th scope="col" class="text-center">Accion</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <th scope="row" class="text-center">1</th>
-            <td class="text-center">Mark</td>
-            <td class="text-center">Otto</td>
-            <td class="text-center"><button class="btn btn-danger">Eliminar</button></td>
-          </tr>
+        <tbody id="tablaBody">
         </tbody>
       </table>
     </main>
